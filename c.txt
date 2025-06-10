@@ -1,0 +1,64 @@
+==================== CONFIDENTIAL ====================
+           TourWeb Pvt. Ltd. - Internal Info
+======================================================
+
+[SERVER INFORMATION]
+Web Server IP       : 192.168.56.101
+Database Server IP  : 192.168.56.102
+Mail Server IP      : 192.168.56.103
+Internal Dev Server : 10.0.0.42
+
+[PORTS & SERVICES]
+HTTP                : 80/tcp
+HTTPS               : 443/tcp
+SSH                 : 22/tcp
+MySQL Database      : 3306/tcp
+FTP                 : 21/tcp
+SMTP Mail Server    : 587/tcp
+
+[LOGIN CREDENTIALS]
+Admin Panel:
+  URL      : https://admin.tourweb.com
+  Username : admin@tourweb.com
+  Password : TourWeb@2025!
+
+Database:
+  Host     : 192.168.56.102
+  User     : dbadmin
+  Pass     : db@tourweb#Secure
+
+FTP Server:
+  Host     : ftp.tourweb.com
+  User     : webdeploy
+  Pass     : W3bDeploy#2025
+
+SSH (Internal Access Only):
+  Host     : 192.168.56.101
+  User     : root
+  Key File : /keys/root_ssh_key.pem
+
+Email Admin:
+  Email    : sysadmin@tourweb.com
+  Password : Sy$Adm!nP@ss2025
+
+[API KEYS - DO NOT SHARE]
+Stripe API Key     : sk_live_51NV***************9xW
+Google Maps API    : AIzaSyD***************kS8
+SendGrid API Key   : SG.zj9***************PFA
+
+[BACKUP INFO]
+Backup Server      : 10.0.0.50
+Backup Location    : /mnt/backups/tourweb/
+Schedule           : Daily @ 02:00 AM (cron)
+Retention Policy   : 14 Days
+
+[NOTES]
+- SSH access is IP-restricted via firewall.
+- Do not expose port 3306 to the internet.
+- Admin panel should be protected with 2FA (in progress).
+- Update passwords every 90 days (last updated: 2025-06-01).
+- Backup encryption passphrase stored in vault (see vault_admin).
+
+======================================================
+This file is STRICTLY CONFIDENTIAL. Unauthorized use is prohibited.
+======================================================
